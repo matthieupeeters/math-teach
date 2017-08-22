@@ -48,11 +48,44 @@ This symbol of course is not used in the same way as a - sign.
 -101  =९899
  
  
+(defun display-complement (v)
+  (labels ((invert-decimal (v)
+            (map 'string
+              (lambda (v)
+                (code-char 
+                 (+ (char-code #\0)
+                    (- (char-code v))
+                    (char-code #\9))))
+              v)))
+    (cond ((zerop v) "0")
+          ((> 0 v) (format nil "९~a" (invert-decimal (format nil "~a" (- (1+ v))))))
+          (t (format nil "0~a" v)))))
+
  
- ९2421
+ ९2491
  ९9432 +
  -----
- ९1853
+ ९1923
+ The carry is absorbed by the two ९'s
+ 
+ 02491
+ 00432 +
+ -----
+ 02923
+ The carry is handled conventionally.
+ 
+ ९2491
+ 09432 +
+ -----
+ ९1923
+ The carry is absorbed by the one ९.
+ 
+ 02491
+ ९9432 +
+ -----
+ 01923
+ 
+ 
   
 
 
