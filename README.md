@@ -32,7 +32,28 @@ This symbol of course is not used in the same way as a - sign.
   -6  = ९4 (ex. ९4 + ९8 = ९2, note the carry-over into ९ dissapears)
   -7  = ९3 (ex. ९3 + ९3 = ९86, note that the lack of a carry-over into ९ makes it a ९8)
   -8  = ९2 (ex. ९2 - 01 = ९1 = ९2 + ९9)
-  -9  = ९1 (ex. 
+  -9  = ९1 (ex. ९1 - ९8 = ९3, note that the borrow from ९ dissapears.)
+ -10  = ९0 (ex. ९90 + 10 = 0)
+ -11  = ९89
+ -12  = ९88
+ -13  = ९87
+ -20  = ९80
+ -21  = ९79
+ -25  = ९75
+ -50  = ९50
+ -86  = ९14
+ -98  = ९02
+ -99  = ९01
+-100  = ९00 = ९900
+-101  =९899
+ 
+ 
+ 
+ ९2421
+ ९9432 +
+ -----
+ ९1853
+  
 
 
 
