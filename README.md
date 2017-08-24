@@ -85,7 +85,12 @@ This symbol of course is not used in the same way as a - sign.
  -----
  01923
  
- 
+ decr
+  0 <-> 9
+  1 <-> 8
+  2 <-> 7
+  3 <-> 6
+  4 <-> 5
   
 
 
